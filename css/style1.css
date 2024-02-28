@@ -1,0 +1,164 @@
+@font-face {
+    font-family: "Titulo";
+    src: url(./candu/Candu.otf) format('opentype');
+}
+body{
+    background-color: white;
+    overflow-x: hidden;
+
+}
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;/* A altura só é vista quando a rolagem é horizontal */
+  }
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 5px;
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #60BF81;
+    border-radius: 5px;
+  }
+#entrada{
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    /* Metade do valor da Largura */
+    margin-top: -50px;
+    /* Metade da valor da Altura */
+    position: absolute;
+    width: 500px;
+    /* Valor da Largura */
+    height: 250px;
+    /* Valor da Altura */
+    font-size: 10px;
+}
+#entrada>h1{
+    font-family: 'Titulo','Helvetica Neue', Arial;
+    color:#60BF81;
+    letter-spacing: 15px;
+    font-size: 80px;
+
+}
+#titulo{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+
+    background-color: #223240;
+    color: white;
+    border: none;
+}
+.menu{
+    background-color: white;
+    height: 100px;
+    width: 15px;
+    border-radius: 4px;
+    margin-right: -7px;
+    margin-top: 5px;
+}
+button > p>svg{
+    margin: 42px 0px 0px -3px;
+}
+.text{
+    font-family: 'Titulo','Helvetica Neue', Arial;
+    color:#60BF81;
+    letter-spacing: 5px;
+    margin: 20px;
+    font-size: 50px;
+}
+
+#Projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+section#Projetos > div#Probióticos {
+    background-color:#347355;
+    padding: 20px;
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.borda {
+    border-radius: 5px;
+    background-color:#347355;
+    padding: 20px;
+}
+
+.padrão {
+    text-align: justify;
+}
+
+.cor {
+    cursor: pointer;
+}
+#saida2{
+
+    display: none;
+    justify-content: center;
+    margin: 10px;
+
+
+}
+main{
+
+    max-width: 1500px;
+    justify-content: center;
+
+}
+
+  @media (max-width: 900px) {
+    section#Projetos > div#Probióticos {
+
+      padding: 20px;
+      grid-column: 0;
+      grid-row: 0;
+    }
+    #Projetos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 600px) {
+    section#Projetos > div#Probióticos {
+
+      padding: 20px;
+      grid-column: 0;
+      grid-row: 0;
+    }
+    #Projetos {
+      display: grid;
+      grid-template-columns:  1fr;
+    }
+    #entrada{
+        left: 50%;
+        top: 50%;
+        margin-left: -130px;
+        /* Metade do valor da Largura */
+        margin-top: -50px;
+        /* Metade da valor da Altura */
+        position: absolute;
+        width: 500px;
+        /* Valor da Largura */
+        height: 250px;
+        /* Valor da Altura */
+        font-size: 10px;
+    }
+    #entrada>h1{
+        font-family: 'Titulo','Helvetica Neue', Arial;
+        color:#60BF81;
+        letter-spacing: 15px;
+        font-size: 30px;
+
+    }
+    .text{
+        font-size: 40px;
+    }
+  }
