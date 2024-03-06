@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="jquery-3.6.1.js"></script>
+    <title>MicroBlog</title>
+</head>
+<body class="container" style="background-color: black">
+    <div id="parte2">
+        <div id="titulo">
+            <h1>MicroBlog</h1>
+        </div>
+        <div style="display:none" id="subtítulo">
+            <p>Somos um blog especializado em trazer conteúdos sobre diversos temas da área da saúde de forma simples e didática! <p>Venha conhecer e tirar suas dúvidas!</p></p>
+            <button id="entrar">Entrar</button>
+        </div>
+    </div>
+    <div id="parteinicial" style="display:none; color:white" >
+       <div style="margin-top:20px">
+        <h1 id="microblog">MicroBlog</h1>
+        <p>Conteúdos novos toda semana!</p>
+       </div>
+        <div style="overflow:hidden;" id="menuacesso">
+          <button class="botaomenu"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+            <div style="display: inline-flex">
+              <p class="bolamenu" id="m1">M</p>
+              <p class="bolamenu" id="m2">E</p>
+              <p class="bolamenu" id="m3">N</p>
+              <p class="bolamenu" id="m4">U</p>
+            </div>
+          </button>
+        <div style="border-radius: 3500px 0px 0px 3500px; height: 600px; margin-top: -50px; margin-right:-120px; transform: rotate(-30deg)" class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+
+          <div style="transform:rotate(30deg); margin-right:100px; margin-top: 60px" class="offcanvas-body">
+            <h5 style="color:#244200;padding:10px">MicroBlog</h5>
+            <ul style="color:#244200; cursor:pointer" onclick="$('#cm').slideToggle(200)">Corpo e mente
+              <div id="cm" style="display:none">
+                <li class="probio lista">Probióticos</li>
+                <li class="sindbur lista">Sindrome de Burnout</li>
+              </div>
+            </ul>
+            <ul style="color:#244200; cursor:pointer" onclick="$('#sp').slideToggle(200)">Saúde e prevenção
+             <div id="sp" style="display:none">
+              <li class="vac lista">Vacinas</li>
+              <li class="antibio lista">Antibióticos</li>
+             </div>
+            </ul>
+            <ul style="color:#244200; cursor:pointer" onclick="$('#cuid').slideToggle(200)">Cuidados
+              <div id="cuid" style="display:none">
+                <li class="lav lista">Lavagem correta das mãos</li>
+              </div>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div id="parte4" style="display:none">
+        <h2 class="partes">Probióticos</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="imagem" src="pexels-kindel-media-8215110.jpg" class="d-block w-100" alt="...">
+                <div  class="carousel-caption d d-md-block">
+                  <div class="texto">
+                    <h5>Probióticos</h5>
+                  <p>De um microrganismo a um produto  que regula a microbiota intestinal, equilibra distúrbios gastrointestinais, previnindo e tratando as doenças. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="imagem" src="pexels-susanne-jutzeler-sujufoto-1233319.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d d-md-block">
+                 <div class="texto">
+                    <h5>Ajudam a controlar a microbiota intestinal</h5>
+                    <p>Atuam na recuperação da microbiota intestinal após o uso de antibiótico;</p>
+                    <p>Fortalecem as atividades gastrointestinais;</p>
+                    <p>Combatem organismos que causam doenças, através de compostos antimicrobianos; </p>
+                    <p>Estimulam o sistema imunológico;</p>
+                 </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="imagem" src="pexels-pixabay-161440.jpg" class="d-block w-10" alt="...">
+                <div class="carousel-caption d d-md-block">
+                  <div class="texto">
+                    <h5>Promovem o alívio em casos de constipação;</h5>
+                    <p>São indicados para lidar com diarreia e outros;</p>
+                    <p>Ajudam na absorção de micronutrientes importantes, como minerais e vitaminas.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="imagem" src="pexels-alisha-mishra-1346347.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d d-md-block">
+                    <div class="texto">
+                        <h5>Microrganismos e Flora Intestinal</h5>
+                        <p>Lactobacillus casei<li>Inibindo bactérias nocivas, tratando de diarreia, alergia, reduz o colesterol e glicemia, e doença inflamatória intestinal.</li></p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="imagem" src="pexels-los-muertos-crew-8866066.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d d-md-block">
+                  <div class="texto">
+                    <h5>Microrganismos e Flora Intestinal</h5>
+                  <p>Lactobacillus acidophilus<li>Trata e previne a diarreia associada ao antibiótico, síndrome do intestino irritável, reduzindo o colesterol, os triglicerídeos e aumentando o HDL.</li></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="imagem" src="pexels-jugoslocos-8169572.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d d-md-block">
+                  <div class="texto">
+                    <h5>Microrganismos e Flora Intestinal</h5>
+                  <P>Streptococcus thermophilus <LI>Reduz episódios de diarreia e sinais associados a má digestão da lactose. Aliviando sintomas da síndrome do intestino irritável.</LI>
+                  </P><p>Bifidobacterium animalis <li>Alivia a constipação intestinal.
+                      Aumenta a sensibilidade à insulina.</li></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="imagem" src="pexels-farhad-ibrahimzade-8743855.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d d-md-block">
+                  <div class="texto">
+                    <h5>Microrganismos e Flora Intestinal</h5>
+                  <p>Bifidobacterium animalis <li>Alivia a constipação intestinal.
+                      Aumenta a sensibilidade à insulina.</li></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div id="parte5" style="display: none">
+        <h2 class="partes">Síndrome de Bournout</h2>
+        <div id="carouselExampleCaptionsSB" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptionsSB" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptionsSB" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptionsSB" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptionsSB" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="imagem" src="pexels-run-ffwpu-12698213.jpg" class="d-block w-100" alt="...">
+                <div  class="carousel-caption d d-md-block">
+                  <div class="texto">
+                    <h5>Síndrome de Burnout</h5>
+                  <p><li>Ultimamente você tem optado por ficar mais isolado?</li>
+                    <li> Assuntos da empresa te irritam com facilidade?</li>
+                   <li>Tem apresentado aversão aos colegas de trabalho? Ou dificuldade latente de concentração?</li>
+                   <li>Tem ficado pessimista em relação a tudo? </li></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="imagem" src="pexels-kat-smith-551588.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d d-md-block">
+                 <div class="texto">
+                    <h5>Exaustão extrema</h5>
+                    <p><p>Estresse</p><p>Esgotamento físico</p><br>
+                    Síndrome comum a profissionais que diariamente atuam sob pressão, e altas responsabilidades.
+                    Ocorendo quando o profissional apresenta objetivos de trabalho extremamente dificeis, ou quando acredita não ter capacidade para exercer tal desempenho esperado.  <p>Podendo resultar em depressão profunda!!!</p></p>
+                 </div>
+
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="imagem" src="pexels-tim-gouw-52608.jpg" class="d-block w-10" alt="...">
+                <div class="carousel-caption d d-md-block">
+                  <div class="texto">
+                    <h5>Busque apoio profissional</h5>
+                    <p>Sintomas: Cansaço excessivo, físico e mental; - Dor de cabeça frequente;- Alterações no apetite; - Insônia; - Dificuldades de concentração; - Sentimentos de fracasso e insegurança; - Sentimentos de derrota e desesperança; - Sentimentos de incompetência; - Alterações repentinas de humor; - Isolamento; - Fadiga; - Pressão alta</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="imagem" src="pexels-pixabay-261909.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d d-md-block">
+                    <div class="texto">
+                        <h5>Diagnóstico e tratamento</h5>
+                        <p>Psiquiátras e psicólogos identificam e orientam a melhor forma de tratamento.<br>
+                            A psicoterapia e medicamentos antidepressivos ou antisolíticos, além da atividade física são a melhor forma de tratamento para aliviar o estresse e controlar os sintomas.</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsSB" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsSB" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div id="parte6" style="display:none">
+      <h2 class="partes">Antibióticos</h2>
+      <div id="carouselExampleCaptionsAnti" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptionsAnti" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsAnti" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptionsAnti" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="imagem" src="pexels-miguel-á-padriñán-806427.jpg" class="d-block w-100" alt="...">
+              <div  class="carousel-caption d d-md-block">
+                <div class="texto">
+                  <h5>Antibióticos, ou cientificamente falando, os antimicrobianos!</h5>
+                <p>São substâncias específicas, na forma de um medicamento, que eliminam ou impedem a multiplicação de microrganismos
+                  maléficos, alterando suas estruturas ou a capacidade de se dividirem.</p><p>Os microrganismos, por outro lado, são organismos que não podem ser vistos a olho nu, sendo extremamente pequenos.
+                      Podendo ou não, causar malefícios ao ser humano.
+                      Entre, eles podemos destacar os fungos, as bactérias e os vírus.</p></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="imagem" src="pexels-anna-shvets-3683051.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d d-md-block">
+               <div class="texto">
+                  <h5>Microrganismos adquirindo resistência aos antibióticos</h5>
+                  <p>O que chamamos de resistência bacteriana é a capacidade da bactéria, que é um microrganismo, de resistir a ação dos antimicrobianos.</p><p>Estes microrganismos sofrem alterações quando expostos descontroladamente aos antimicrobianos, se tornando ultrarresistentes a ele, como em casos de  uso indevido por pessoas com infecções virais (resfriados e gripes).</p>
+               </div>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="imagem" src="pexels-karolina-grabowska-4047110.jpg" class="d-block w-10" alt="...">
+              <div class="carousel-caption d d-md-block">
+                <div class="texto">
+                  <h5>Consequências do uso excessivo de antibióticos:</h5>
+                  <p>Multipliacação de super bactérias</p><p>Além de problemas renais e hepáticos</p><p>Podendo prejudicar a formação e o desenvolvimento do feto em gestantes ou lactantes</p><p style="background-color:#117e67 ;border-radius:30px 30px;padding:5px">Pode mascarar sintomas e enfermidades</p><p>Tendo como consequência úlceras, gastrites, hemorragias digestivas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsAnti" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsAnti" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  </div>
+  <div id="parte7" style="display:none">
+    <h2 class="partes">Vacinas</h2>
+    <div id="carouselExampleCaptionVac" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="imagem" src="pexels-karolina-grabowska-4046950.jpg" class="d-block w-100" alt="...">
+            <div  class="carousel-caption d d-md-block">
+              <div class="texto">
+                <h5>Vacinas</h5>
+              <p>NÃO CURA, NEM MATA
+                PREVINE!!</p>
+                <p>As vacinas são de extrema importancia na proteção conta doenças que possam ameçar nossa saúde, em qualquer fase de nossa vida.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="imagem" src="pexels-artem-podrez-4492047.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d d-md-block">
+             <div class="texto">
+                <h5>Importância e necessidade</h5>
+                <p><li>As vacinas são úteis e efetivas no controle de doenças infecto-contagiosas, mais eficazes que o uso de medicamentos para sua cura, sendo um método mais barato no controle da saúde pública.</li><li>A vacinação resultou em uma queda drástica na incidência de doenças que costumavam matar milhares de pessoas. Entre essas doenças podemos destacar coqueluche, sarampo, poliomielite e rubéola.</p>
+             </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="imagem" src="pexels-nataliya-vaitkevich-5863389.jpg" class="d-block w-10" alt="...">
+            <div class="carousel-caption d d-md-block">
+              <div class="texto">
+                <h5>Não seja antivacina, seja anti doenças, vacine-se e seja a favor da sua saúde! </h5>
+                <p>Toda vacina licenciada para uso passou antes por diversas fases de avaliação, garantindo sua segurança. Elas também passam pela avaliação de institutos reguladores rígidos. No Brasil, essa função cabe à Agência Nacional de Vigilância Sanitária (Anvisa).</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="imagem" src="pexels-cdc-3992931.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d d-md-block">
+                <div class="texto">
+                    <h5>Protejam as crianças e si mesmos!! </h5>
+                    <p>Consientize-se, pesquise, se informe, não se deixe levar por opniões falhas e sem embasamento profissional!! Vacine seus filhos: do nascimento
+                      a adolescência</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<div id="parte8" style="display:none">
+    <h2 class="partes">Vacinas</h2>
+    <div id="carouselExampleCaptionVac" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="imagem" src="pexels-karolina-grabowska-4046950.jpg" class="d-block w-100" alt="...">
+            <div  class="carousel-caption d d-md-block">
+              <div class="texto">
+                <h5>Vacinas</h5>
+              <p>NÃO CURA, NEM MATA
+                PREVINE!!</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="imagem" src="pexels-artem-podrez-4492047.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d d-md-block">
+             <div class="texto">
+                <h5>Importância e necessidade</h5>
+                <p>As vacinas são de extrema importancia na proteção conta doenças que possam ameçar nossa saúde, em qualquer fase de nossa vida.<li>As vacinas são úteis e efetivas no controle de doenças infecto-contagiosas, mais eficazes que o uso de medicamentos para sua cura, sendo um método mais barato no controle da saúde pública.</li><li>A vacinação resultou em uma queda drástica na incidência de doenças que costumavam matar milhares de pessoas. Entre essas doenças podemos destacar coqueluche, sarampo, poliomielite e rubéola.</p>
+             </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="imagem" src="pexels-nataliya-vaitkevich-5863389.jpg" class="d-block w-10" alt="...">
+            <div class="carousel-caption d d-md-block">
+              <div class="texto">
+                <h5>Não seja anti vacina, seja anti doenças, vacine-se e seja a favor da sua saúde </h5>
+                <p>Toda vacina licenciada para uso passou antes por diversas fases de avaliação, garantindo sua segurança. Elas também passam pela avaliação de institutos reguladores rígidos. No Brasil, essa função cabe à Agência Nacional de Vigilância Sanitária (Anvisa).</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="imagem" src="pexels-cdc-3992931.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d d-md-block">
+                <div class="texto">
+                    <h5>Protejam as crianças e si mesmos!! </h5>
+                    <p>Consientize-se, pesquise, se informe, não se deixe levar por opniões falhas e sem embasamento profissional!! Vacine seus filhos: do nascimento
+                      a adolescência</p>
+                </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionVac" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<div id="parte9" style="display: none">
+  <h2 class="partes">Lavagem correta das mãos</h2>
+  <div id="carouselExampleCaptionLav" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptionLav" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptionLav" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptionLav" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="imagem" src="pexels-cottonbro-studio-3952220.jpg" class="d-block w-100" alt="...">
+          <div  class="carousel-caption d d-md-block">
+            <div class="texto">
+              <h5>Lavando corretamente as mãos</h5>
+            <p>A lavagem correta das mãos, traz inúmeros benfícios a saúde, diminuindo infecções, contaminações, e proliferação de doenças, projendo você e o próximo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video class="d-block w-100"  class="imagem" src="production ID_4154238.mp4" loop autoplay controls muted></video>
+          <div class="carousel-caption d d-md-block">
+           <div class="texto">
+              <h5>Observe passo-a-passo!</h5>
+              <p></p>
+           </div>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <video class="d-block w-100"  class="imagem" src="production ID_3959692.mp4" loop autoplay controls muted></video>
+          <div class="carousel-caption d d-md-block">
+            <div class="texto">
+              <h5>Mais higiêne!</h5>
+              <p>Além disso, o uso de álcool em gel, é extremamente importante, para a efetiva eliminação da sujeira e microrganismos infecciosos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionLav" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionLav" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+</div>
+    <div id="parte3" style="display: none">
+        <main>
+            <section id="Projetos">
+                <div class="borda" id="Probióticos">
+                    <h2  class="cor probio" class="padrão">
+                        Probióticos
+                    </h2>
+                    <p class="padrão">De um microrganismo a um produto  que regula a microbiota intestinal, equilibra distúrbios gastrointestinais, previnindo e tratando as doenças.</p>
+                    <img height="500px" width="150px" src="pexels-monstera-5841804.jpg" alt="">
+                </div>
+                <div class="borda"  id="Vacinas">
+                    <h2 class="cor vac" class="padrão">
+                        Vacinas
+                    </h2>
+                    <p class="padrão">As vacinas são de extrema importancia na proteção conta doenças que possam ameçar nossa saúde, em qualquer fase de nossa vida.</p>
+                    <video width="150px" autoplay controls loop muted src="pexels-artem-podrez-5752729.mp4">
+                    </video>
+                </div>
+                <div class="borda"  id="Lavagemdasmãos">
+                    <h2 class="cor lav">
+                        Lavagem correta das mãos
+                    </h2>
+                    <p>Descubra a importância e o passo a passo da lavagem correta das mãos</p>
+                    <video height="150px" width="150px" src="production ID_4326791.mp4" autoplay loop muted controls></video>
+                </div>
+                <div class="borda"  id="Síndrome">
+                    <h2 class="cor sindbur" class="padrão">
+                        Síndrome de burnout
+                    </h2>
+                    <h4 class="padrão">
+                        Síndrome do esgotamento profissional
+                    </h4>
+                    <p class="padrão">"Ultimamente você tem optado por ficar mais isolado?"</p>
+
+                       <p class="padrão">"Assuntos da empresa te irritam com facilidade?"</p>
+
+                      <p class="padrão">"Tem apresentado aversão aos colegas de trabalho? Ou dificuldade latente de concentração?"</p>
+
+                      <p class="padrão">"Tem ficado pessimista em relação a tudo?"</p>
+                </div>
+                <div class="borda"  id="Antibióticos">
+                    <h2 class="cor antibio" class="padrão">
+                        Antibióticos
+                    </h2>
+                    <p class="padrão">São substâncias específicas, na forma de um medicamento, que eliminam ou impedem a multiplicação de microrganismos
+                        maléficos, alterando suas estruturas ou a capacidade de se dividiremo</p>
+                    <video height="100px" width="150px" src="pexels-gabby-k-5838986.mp4" autoplay controls loop muted></video>
+                </div>
+            </section>
+        </main>
+    </div>
+      <div id="ultimaparte" style="display: none">
+        <div id="comentarios">
+          <h3>Comente nosso conteúdo e tire suas dúvidas!</h3>
+          <form action="">
+              <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Nome">
+                  <label for="floatingInput">Nome</label>
+                </div>
+              <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                  <label for="floatingTextarea">Comentário</label>
+              </div>
+              <button id="botao" class="btn btn-primary"  type="submit">Enviar</button>
+          </form>
+      </div>
+      <div id="postagens">
+          <h1>Postages recentes:</h1></h1>
+          <p class="probio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg> Probióticos e bem estar intestinal.</p>
+          <p class="antibio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg> Antibióticos, como o uso descontrolado afeta nossa imunidade.</p>
+          <p class="sindbur" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg> Sindrome de Bournout, como identificar.</p>
+          <p class="lav"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg> Lavagem correta das mãos, etapa por etapa</p>
+          <p class="vac"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg> Vacinas, mitos e verdades.</p>
+      </div>
+        <footer>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+              <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+            </svg>
+          </div>
+          <p>&copy Michaela Galbiati</p>
+        </footer>
+      </div>
+    <script>
+        $(
+            function(){
+                $('#titulo').mouseenter(
+                    function(){
+                        $('#subtítulo').fadeToggle(1000);
+                    }
+                    )
+            }
+        )
+        $(
+          function(){
+            $('#entrar').click(
+              function(){
+                $('#parte2').hide(0)
+                $('#parteinicial').show(0)
+                $('#parte3').show(0)
+                $('#ultimaparte').show(0)
+
+              }
+            )
+          }
+        )
+        $(
+          function(){
+            $('#microblog').click(
+              function(){
+                $('#parte2').hide(0)
+                $('#parteinicial').show(0)
+                $('#parte3').show(0)
+                $('#ultimaparte').show(0)
+                $('#parte5').hide(0)
+                $('#parte6').hide(0)
+                $('#parte7').hide(0)
+                $('#parte8').hide(0)
+                $('#parte4').hide(0)
+                $('#parte9').hide(0)
+
+              }
+            )
+          }
+        )
+        $(
+          function(){
+            $('.probio').click(
+              function(){
+                $('#parte2').hide(0)
+                $('#parteinicial').show(0)
+                $('#parte4').slideDown(500)
+                $('#parte3').hide(0)
+                $('#ultimaparte').show(0)
+                $('#parte5').hide(0)
+                $('#parte6').hide(0)
+                $('#parte7').hide(0)
+                $('#parte8').hide(0)
+                $('#parte9').hide(0)
+
+
+              }
+            )
+          }
+        )
+        $(
+          function(){
+            $('.sindbur').click(
+              function(){
+                $('#parte2').hide(0)
+                $('#parteinicial').show(0)
+                $('#parte4').hide(0)
+                $('#parte3').hide(0)
+                $('#ultimaparte').show(0)
+                $('#parte5').slideDown(500)
+                $('#parte6').hide(0)
+                $('#parte7').hide(0)
+                $('#parte8').hide(0)
+                $('#parte9').hide(0)
+
+
+
+              }
+            )
+          }
+        )
+        $(
+          function(){
+            $('.antibio').click(
+              function(){
+                $('#parte2').hide(0)
+                $('#parteinicial').show(0)
+                $('#parte4').hide(0)
+                $('#parte3').hide(0)
+                $('#ultimaparte').show(0)
+                $('#parte6').slideDown(500)
+                $('#parte5').hide(0)
+                $('#parte7').hide(0)
+                $('#parte8').hide(0)
+                $('#parte9').hide(0)
+
+
+
+              }
+            )
+          }
+        )
+        $(
+          function(){
+            $('.vac').click(
+              function(){
+                $('#parte2').hide(0)
+                $('#parteinicial').show(0)
+                $('#parte4').hide(0)
+                $('#parte3').hide(0)
+                $('#ultimaparte').show(0)
+                $('#parte7').slideDown(500)
+                $('#parte5').hide(0)
+                $('#parte6').hide(0)
+                $('#parte8').hide(0)
+                $('#parte9').hide(0)
+
+
+              }
+            )
+          }
+        )
+        $(
+          function(){
+            $('.lav').click(
+              function(){
+                $('#parte2').hide(0)
+                $('#parteinicial').show(0)
+                $('#parte4').hide(0)
+                $('#parte3').hide(0)
+                $('#ultimaparte').show(0)
+                $('#parte8').hide(0)
+                $('#parte5').hide(0)
+                $('#parte6').hide(0)
+                $('#parte7').hide(0)
+                $('#parte9').slideDown(500)
+
+
+              }
+            )
+          }
+        )
+    </script>
+</body>
+</html>

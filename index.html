@@ -19,31 +19,31 @@
         </div>
         <div id="saida" style="display: none;">
             <div id="titulo">
-                <h1 class="text">MicroBlog</h1>
+                <h1 class="text"><a href="index.html">MicroBlog</a></h1>
                 <button class="botaomenu"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" > <p class="menu"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
                     <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
                   </svg></p>
                 </button>
             </div>
-                <div style="border-radius: 3500px 0px 0px 3500px; height: 600px; margin-top: -50px; margin-right:-120px; transform: rotate(-30deg)" class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div style="background-color:#8ac69f;border-radius: 3500px 0px 0px 3500px; height: 600px; margin-top: -50px; margin-right:-120px; transform: rotate(-30deg)" class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
 
                 <div style="transform:rotate(30deg); margin-right:100px; margin-top: 60px" class="offcanvas-body">
-                    <h5 style="color:#244200;padding:10px">MicroBlog</h5>
-                    <ul style="color:#244200; cursor:pointer" onclick="$('#cm').slideToggle(200)">Corpo e mente
-                    <div id="cm" style="display:none">
-                        <li class="probio lista">Probióticos</li>
-                        <li class="sindbur lista">Sindrome de Burnout</li>
+                    <h4 style="color:#223240;padding:10px">MicroBlog</h4>
+                    <ul style="color:#223240; cursor:pointer" onclick="$('#cm').slideToggle(200)">Corpo e mente
+                    <div id="cm" class="link" style="display:none">
+                        <a href="probioticos.html"class="probio lista">Probióticos</a>
+                        <a href="sindrome.html" class="sindbur lista">Sindrome de Burnout</a>
                     </div>
                     </ul>
-                    <ul style="color:#244200; cursor:pointer" onclick="$('#sp').slideToggle(200)">Saúde e prevenção
-                    <div id="sp" style="display:none">
-                    <li class="vac lista">Vacinas</li>
-                    <li class="antibio lista">Antibióticos</li>
+                    <ul style="color:#223240; cursor:pointer" onclick="$('#sp').slideToggle(200)">Saúde e prevenção
+                    <div id="sp" class="link" style="display:none">
+                    <a href="vacinas.html" class="vac lista">Vacinas</a>
+                    <a href="antibioticos.html" class="antibio lista">Antibióticos</a>
                     </div>
                     </ul>
-                    <ul style="color:#244200; cursor:pointer" onclick="$('#cuid').slideToggle(200)">Cuidados
+                    <ul style="color:#223240; cursor:pointer" onclick="$('#cuid').slideToggle(200)">Cuidados
                     <div id="cuid" style="display:none">
-                        <li class="lav lista">Lavagem correta das mãos</li>
+                        <a href="maos.html" class="lav lista">Lavagem correta das mãos</a>
                     </div>
                     </ul>
                     </div>
@@ -56,14 +56,14 @@
                 <section id="Projetos">
                     <div class="borda" id="Probióticos">
                         <h2  class="cor probio" class="padrão">
-                            Probióticos
+                            <a href="probioticos.html">Probióticos</a>
                         </h2>
                         <p class="padrão">De um microrganismo a um produto  que regula a microbiota intestinal, equilibra distúrbios gastrointestinais, previnindo e tratando as doenças.</p>
-                        <img height="500px" width="200px" src="pexels-monstera-5841804.jpg" alt="">
+                        <img height="600px" width="300px" src="probio.jpg" alt="">
                     </div>
                     <div class="borda"  id="Vacinas">
                         <h2 class="cor vac" class="padrão">
-                            Vacinas
+                           <a href="vacinas.html"> Vacinas</a>
                         </h2>
                         <p class="padrão">As vacinas são de extrema importancia na proteção conta doenças que possam ameçar nossa saúde, em qualquer fase de nossa vida.</p>
                         <video width="200px" autoplay controls loop muted src="pexels-artem-podrez-5752729.mp4">
@@ -71,17 +71,17 @@
                     </div>
                     <div class="borda"  id="Lavagemdasmãos">
                         <h2 class="cor lav">
-                            Lavagem correta das mãos
+                            <a href="maos.html">Lavagem correta das mãos</a>
                         </h2>
                         <p class="padrão">Descubra a importância e o passo a passo da lavagem correta das mãos</p>
                         <video height="200px" width="200px" src="production ID_4326791.mp4" autoplay loop muted controls></video>
                     </div>
                     <div class="borda"  id="Síndrome">
                         <h2 class="cor sindbur" class="padrão">
-                            Síndrome de burnout
+                            <a href="sindrome.html">Síndrome de burnout</a>
                         </h2>
                         <h4 class="padrão">
-                            Síndrome do esgotamento profissional
+                           <a href="sindrome.html"> Síndrome do esgotamento profissional</a>
                         </h4>
                         <p class="padrão">"Ultimamente você tem optado por ficar mais isolado?"</p>
 
@@ -93,7 +93,7 @@
                     </div>
                     <div class="borda"  id="Antibióticos">
                         <h2 class="cor antibio" class="padrão">
-                            Antibióticos
+                           <a href="antibioticos.html"> Antibióticos</a>
                         </h2>
                         <p class="padrão">São substâncias específicas, na forma de um medicamento, que eliminam ou impedem a multiplicação de microrganismos
                             maléficos, alterando suas estruturas ou a capacidade de se dividiremo</p>
@@ -101,6 +101,60 @@
                     </div>
                 </section>
             </main>
+            <div id="ultimaparte" >
+                <div id="saida3">
+                    <div id="postagens">
+                        <h1>Postagens recentes:</h1></h1>
+                        <p class="probio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg> Probióticos e bem estar intestinal.</p>
+                        <p class="antibio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg> Antibióticos, como o uso descontrolado afeta nossa imunidade.</p>
+                        <p class="sindbur" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg> Sindrome de Bournout, como identificar.</p>
+                        <p class="lav"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg> Lavagem correta das mãos, etapa por etapa</p>
+                        <p class="vac"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg> Vacinas, mitos e verdades.</p>
+                    </div>
+                    <div id="comentarios">
+                      <h3>Comente nosso conteúdo e tire suas dúvidas!</h3>
+                      <form action="">
+                          <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="floatingInput" placeholder="Nome">
+                              <label for="floatingInput">Nome</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                                <label for="floatingInput">Email</label>
+                              </div>
+                          <div class="form-floating">
+                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                              <label for="floatingTextarea">Comentário</label>
+                          </div>
+                          <button id="botao" class="btn btn-primary"  type="submit">Enviar</button>
+                      </form>
+                  </div>
+                </div>
+
+                <footer>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+                      <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                      <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg>
+                  </div>
+                  <p>&copy Michaela Galbiati</p>
+                </footer>
         </div>
 
 
@@ -110,9 +164,9 @@
             });
 
             function carregar() {
-                $('#entrada').hide(5000);
-                $('#saida').show(10000);
-                $('#saida2').show(10000);
+                $('#entrada').hide(4000);
+                $('#saida').show(12000);
+                $('#saida2').show(12000);
 
 
             }

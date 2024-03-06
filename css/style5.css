@@ -1,0 +1,392 @@
+@font-face {
+    font-family: "Titulo";
+    src: url(./candu/Candu.otf) format('opentype');
+}
+body{
+    background-color: white;
+    overflow-x: hidden;
+
+}
+body::-webkit-scrollbar {
+    width: 5px;
+    height: 3px;/* A altura só é vista quando a rolagem é horizontal */
+  }
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+    padding: 5px;
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #60BF81;
+    border-radius: 5px;
+  }
+  a{
+    background-color: none;
+    color: white;
+    text-decoration: none;
+    }
+    a:link {
+      text-decoration: none;
+      color: white !important;
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: white !important;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: white !important;
+    }
+
+    a:active {
+      text-decoration: none;
+      color: white !important;
+    }
+#entrada{
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    /* Metade do valor da Largura */
+    margin-top: -50px;
+    /* Metade da valor da Altura */
+    position: absolute;
+    width: 500px;
+    /* Valor da Largura */
+    height: 250px;
+    /* Valor da Altura */
+    font-size: 10px;
+}
+#entrada>h1{
+    font-family: 'Titulo','Helvetica Neue', Arial;
+    color:#60BF81;
+    letter-spacing: 15px;
+    font-size: 80px;
+
+}
+#titulo{
+    display: flex;
+    justify-content: space-between;
+}
+button{
+
+    background-color: #223240;
+    color: white;
+    border: none;
+}
+.menu{
+    background-color: white;
+    height: 100px;
+    width: 15px;
+    border-radius: 4px;
+    margin-right: -7px;
+    margin-top: 5px;
+}
+button > p>svg{
+    margin: 40px 0px 0px -2px;
+}
+
+.lista {
+    list-style: none;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .lista:hover {
+    background-color: #347355;
+    border-radius: 10px;
+  }
+
+
+.text{
+    font-family: 'Titulo','Helvetica Neue', Arial;
+    color:#60BF81;
+    letter-spacing: 5px;
+    margin: 20px;
+    font-size: 50px;
+}
+
+#Projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+section#Projetos > div#Probióticos {
+    background-color:#347355;
+    padding: 20px;
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.borda {
+    border-radius: 5px;
+    background-color:#347355;
+    padding: 20px;
+}
+
+.padrão {
+    text-align: justify;
+}
+
+.cor {
+    cursor: pointer;
+}
+#saida2{
+
+    display: none;
+    justify-content: center;
+    margin: 10px;
+}
+main{
+
+    max-width: 1500px;
+    justify-content: center;
+
+}
+#saida3{
+    display: grid;
+    margin-top: 80px;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+#comentarios {
+
+    background-color: #93D94E;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  #comentarios > h3 {
+    font-size: 24px;
+    padding: 10px;
+    color: #223240;
+  }
+  #botao {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #223240;
+    border: none;
+  }
+
+  #postagens {
+    background-color:#60BF81;
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  #postagens > p {
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  #postagens > p:hover {
+    background-color: #223240;
+    border-radius: 5px;
+  }
+
+  svg {
+    margin: 10px;
+    height: 20px;
+    width: 20px;
+  }
+
+  footer {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+
+  @media (max-width: 900px) {
+    section#Projetos > div#Probióticos {
+
+      padding: 20px;
+      grid-column: 0;
+      grid-row: 0;
+    }
+    #Projetos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    #saida3{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 600px) {
+    section#Projetos > div#Probióticos {
+
+      padding: 20px;
+      grid-column: 0;
+      grid-row: 0;
+    }
+    #Projetos {
+      display: grid;
+      grid-template-columns:  1fr;
+    }
+    #entrada{
+        left: 50%;
+        top: 50%;
+        margin-left: -130px;
+        /* Metade do valor da Largura */
+        margin-top: -50px;
+        /* Metade da valor da Altura */
+        position: absolute;
+        width: 500px;
+        /* Valor da Largura */
+        height: 250px;
+        /* Valor da Altura */
+        font-size: 10px;
+    }
+    #entrada>h1{
+        font-family: 'Titulo','Helvetica Neue', Arial;
+        color:#60BF81;
+        letter-spacing: 15px;
+        font-size: 30px;
+
+    }
+    .text{
+        font-size: 40px;
+    }
+    #saida3{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+  }
+
+
+
+/*probióticos*/
+  #probioticos{
+    color: white !important;
+  }
+
+.textoprincbloco{
+    margin-top: 40px;
+}
+
+
+
+.container{
+  width:200vw;
+  height:130vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.slider {
+  height: 450px;
+  width:400vw;
+  display: flex;
+  perspective: 1400px;
+  position: relative;
+  align-items:center;
+}
+.slider [class*="bloco"]>h4{
+  margin-top: 180px;
+  padding: 10px;
+  text-align: justify;
+  color: black;
+  background-color: rgb(255, 255, 255);
+
+}
+.slider [class*="bloco"]>p{
+  margin-top: -10px;
+  padding: 10px;
+  text-align: justify;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+.bloco1{      background:url('./maos/foto1.jpg');
+  background-size:cover;
+  background-position:center center;}
+.bloco2{
+background-color: #223240;}
+.bloco3{
+    background-color: #223240;}
+.bloco4{
+    background-color: #223240;}
+.bloco5{
+    background-color: #223240;}
+.bloco6{
+background:url('maos/foto6.jpg');
+  background-size:cover;
+  background-position:center center;}
+
+.slider [class*="bloco"] {
+/*   float: left; */
+  overflow: hidden;
+  transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  background-color: #223240;
+  width: 400px;
+  height:450px ;
+  border-radius: 30px;
+  margin-left: 10px;
+}
+.slider [class*="bloco"]:nth-child(7),
+.slider [class*="bloco"]:nth-child(1) {
+  width: 400px;
+  height: 450px;
+  transform: scale(0.9) translate(-50%,-50%);
+  top: 10%;
+  z-index:1;
+}
+.slider [class*="bloco"]:nth-child(2),
+.slider [class*="bloco"]:nth-child(6) {
+  width: 400px;
+  height: 450px;
+  transform: scale(0.7) translate(-50%,-50%);
+  top: 20%;
+  z-index:2;
+}
+.slider [class*="bloco"]:nth-child(3),
+.slider [class*="bloco"]:nth-child(5) {
+  width: 400px;
+  height: 450px;
+  transform: scale(0.8) translate(-50%,-50%);
+  top: 30%;
+  z-index:3;
+}
+.slider [class*="bloco"]:nth-child(4) {
+  width: 400px;
+  height: 450px;
+  border-color: #c92026;
+  color: #fff;
+  transform: scale(1) translate(-50%,-50%);
+  top: 50%;
+  z-index:4;
+}
+.slider [class*="bloco"]:nth-child(1){
+    left:-13%;}
+  .slider [class*="bloco"]:nth-child(2){
+    left:-5%;}
+  .slider [class*="bloco"]:nth-child(3){
+    left:10%;}
+  .slider [class*="bloco"]:nth-child(4){
+    left:50%;}
+  .slider [class*="bloco"]:nth-child(5){
+    left:71%;}
+  .slider [class*="bloco"]:nth-child(6){
+    left:85%;}
+  .slider [class*="bloco"]:nth-child(7){
+    left:100%;}
+  .slider .firstSlide {
+      -webkit-animation:  firstChild 1s;
+      animation:  firstChild 1s;
+  }
+/*Animation for buyers landing page slider*/
+@-webkit-keyframes firstChild {
+    0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+    100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+}
+@keyframes firstChild {
+   0% {left:100%; transform: scale(0.2) translate(-50%,-50%);}
+    100% {left: -13%; transform: scale(0.2) translate(-50%,-50%);}
+}

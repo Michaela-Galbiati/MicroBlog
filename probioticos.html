@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style1.css">
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.1.js"></script>
+        <title>MicroBlog</title>
+    </head>
+
+    <body style="background-color:#223240;">
+        <div id="entrada">
+            <h1>Probiotics</h1>
+        </div>
+        <div id="saida" style="display: none;">
+            <div id="titulo">
+                <h1 class="text"><a href="index.html">MicroBlog</a></h1>
+                <button class="botaomenu"  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" > <p class="menu"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="black" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                    <path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
+                  </svg></p>
+                </button>
+            </div>
+            <div style="background-color:#8ac69f;border-radius: 3500px 0px 0px 3500px; height: 600px; margin-top: -50px; margin-right:-120px; transform: rotate(-30deg)" class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+
+                <div style="transform:rotate(30deg); margin-right:100px; margin-top: 60px" class="offcanvas-body">
+                    <h4 style="color:#223240;padding:10px">MicroBlog</h4>
+                    <ul style="color:#223240; cursor:pointer" onclick="$('#cm').slideToggle(200)">Corpo e mente
+                    <div id="cm" class="link" style="display:none">
+                        <a href="probioticos.html"class="probio lista">Probióticos</a>
+                        <a href="sindrome.html" class="sindbur lista">Sindrome de Burnout</a>
+                    </div>
+                    </ul>
+                    <ul style="color:#223240; cursor:pointer" onclick="$('#sp').slideToggle(200)">Saúde e prevenção
+                    <div id="sp" class="link" style="display:none">
+                    <a href="vacinas.html" class="vac lista">Vacinas</a>
+                    <a href="antibioticos.html" class="antibio lista">Antibióticos</a>
+                    </div>
+                    </ul>
+                    <ul style="color:#223240; cursor:pointer" onclick="$('#cuid').slideToggle(200)">Cuidados
+                    <div id="cuid" style="display:none">
+                        <a href="maos.html" class="lav lista">Lavagem correta das mãos</a>
+                    </div>
+                    </ul>
+                    </div>
+                </div>
+        </div>
+        <div id="saida2">
+
+            <div id="probioticos">
+                <h2>Probiotics</h2>
+                <div  class="container">
+                    <div class="slider">
+                       <div class="bloco1">
+
+                                <h4>
+                                    Probióticos
+                                </h4>
+                                <p>
+                                    De um microrganismo a um produto que regula a microbiota intestinal, equilibra distúrbios gastrointestinais, previnindo e tratando as doenças.
+                                </p>
+                       </div>
+                       <div class="bloco2">
+
+                                <h4>
+                                    Ajudam a controlar a microbiota intestinal
+                                </h4>
+                                <p>
+                                    Atuam na recuperação da microbiota intestinal após o uso de antibiótico;
+
+                                    Fortalecem as atividades gastrointestinais;
+
+                                    Combatem organismos que causam doenças, através de compostos antimicrobianos;
+
+                                    Estimulam o sistema imunológico;
+                                </p>
+                        </div>
+                        <div class="bloco3">
+
+                                <h4>
+                                    Promovem o alívio em casos de constipação
+
+                                </h4>
+                                <p>
+                                    São indicados para lidar com diarreia, além de auxiliar na absorção de micronutrientes importantes, como minerais e vitaminas.
+
+                                </p>
+                        </div>
+                        <div class="bloco4">
+
+
+                                <h4>
+                                    Microrganismos e Flora Intestinal
+                                </h4>
+                                <p>
+                                    Lactobacillus casei: Inibe bactérias nocivas, tratando de diarreia, alergia, reduz o colesterol e glicemia, e doença inflamatória intestinal.
+                                </p>
+                        </div>
+                        <div class="bloco5">
+
+                                <h4>
+                                    Microrganismos e Flora Intestinal
+                                </h4>
+                                <p>
+                                    Lactobacillus acidophilus: trata e previne a diarreia associada ao antibiótico, síndrome do intestino irritável, reduzindo o colesterol, os triglicerídeos e aumentando o HDL
+                                </p>
+                        </div>
+                        <div class="bloco6">
+
+                                <h4>
+                                    Microrganismos e Flora Intestinal
+                                </h4>
+                                <p>
+                                    Streptococcus thermophilus: reduz episódios de diarreia e sinais associados a má digestão da lactose. Aliviando sintomas da síndrome do intestino irritável.Bifidobacterium animalis Alivia a constipação intestinal.
+                                    Aumenta a sensibilidade à insulina
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ultimaparte" style="margin-top: -400px" >
+                <div id="saida3">
+                    <div id="postagens">
+                        <h1>Postages recentes:</h1></h1>
+                        <p class="probio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg> Probióticos e bem estar intestinal.</p>
+                        <p class="antibio"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg> Antibióticos, como o uso descontrolado afeta nossa imunidade.</p>
+                        <p class="sindbur" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg> Sindrome de Bournout, como identificar.</p>
+                        <p class="lav"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg> Lavagem correta das mãos, etapa por etapa</p>
+                        <p class="vac"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg> Vacinas, mitos e verdades.</p>
+                    </div>
+                    <div id="comentarios">
+                      <h3>Comente nosso conteúdo e tire suas dúvidas!</h3>
+                      <form action="">
+                          <div class="form-floating mb-3">
+                              <input type="text" class="form-control" id="floatingInput" placeholder="Nome">
+                              <label for="floatingInput">Nome</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="floatingInput" placeholder="Email">
+                                <label for="floatingInput">Email</label>
+                              </div>
+                          <div class="form-floating">
+                              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                              <label for="floatingTextarea">Comentário</label>
+                          </div>
+                          <button id="botao" class="btn btn-primary"  type="submit">Enviar</button>
+                      </form>
+                  </div>
+                </div>
+
+                <footer>
+                  <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+                      <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                      <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                    </svg>
+                  </div>
+                </footer>
+        </div>
+
+
+        <script>
+
+            $( document ).ready(function() {
+                 setTimeout(carregar, 1000);
+            });
+
+            function carregar() {
+                $('#entrada').hide(2000);
+                $('#saida').show(8000);
+                $('#saida2').show(8000);
+
+
+            }
+
+            function rotate() {
+                var lastChild = $('.slider div:last-child').clone();
+                /*$('#test').html(lastChild)*/
+                $('.slider div').removeClass('firstSlide')
+                $('.slider div:last-child').remove();
+                $('.slider').prepend(lastChild)
+                $(lastChild).addClass('firstSlide')
+              }
+
+              window.setInterval(function(){
+                rotate()
+              }, 7000);
+
+            </script>
+    </body>
+
+
+</html>
