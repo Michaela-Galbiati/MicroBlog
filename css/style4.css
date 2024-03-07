@@ -45,6 +45,10 @@ body::-webkit-scrollbar-thumb {
       text-decoration: none;
       color: white !important;
     }
+    .link{
+      display: grid;
+      grid-template-columns: 1fr ;
+    }
 #entrada{
     left: 50%;
     top: 50%;
@@ -166,6 +170,12 @@ main{
     font-size: 24px;
     padding: 10px;
     color: #223240;
+  }
+  form{
+    margin-top: 50px;
+  }
+  .form-floating{
+    margin-top: 20px;
   }
   #botao {
     margin-top: 20px;

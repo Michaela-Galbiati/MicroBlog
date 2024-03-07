@@ -45,6 +45,7 @@ body::-webkit-scrollbar-thumb {
       text-decoration: none;
       color: white !important;
     }
+    
 #entrada{
     left: 50%;
     top: 50%;
@@ -65,6 +66,10 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 15px;
     font-size: 80px;
 
+}
+.link{
+  display: grid;
+  grid-template-columns: 1fr ;
 }
 #titulo{
     display: flex;
@@ -161,7 +166,12 @@ main{
     padding: 20px;
     border-radius: 10px 10px 10px 10px;
   }
-
+  form{
+    margin-top: 50px;
+  }
+  .form-floating{
+    margin-top: 20px;
+  }
   #comentarios > h3 {
     font-size: 24px;
     padding: 10px;

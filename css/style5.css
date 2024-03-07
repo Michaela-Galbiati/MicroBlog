@@ -45,6 +45,10 @@ body::-webkit-scrollbar-thumb {
       text-decoration: none;
       color: white !important;
     }
+    .link{
+      display: grid;
+      grid-template-columns: 1fr ;
+    }
 #entrada{
     left: 50%;
     top: 50%;
@@ -173,7 +177,12 @@ main{
     background-color: #223240;
     border: none;
   }
-
+  form{
+    margin-top: 50px;
+  }
+  .form-floating{
+    margin-top: 20px;
+  }
   #postagens {
     background-color:#60BF81;
     color: white;
